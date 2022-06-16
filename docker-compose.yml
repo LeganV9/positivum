@@ -1,0 +1,8 @@
+services:
+  positivum:
+    container_name: positivum
+    image: php:7.4.30-apache-buster
+    ports:
+      - 3002:80
+    volumes:
+      - "./:/var/www/html/"
